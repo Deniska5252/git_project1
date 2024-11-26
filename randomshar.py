@@ -17,10 +17,9 @@ class MyWidget(QMainWindow):
         MainWindow.setWindowTitle("MainWindow")
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.pushButton = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(270, 430, 181, 81))
+        self.pushButton.setGeometry(QtCore.QRect(300, 400, 200, 100))
         self.pushButton.setText("PushButton")
         self.pushButton.clicked.connect(self.printshar)
-
         MainWindow.setCentralWidget(self.centralwidget)
 
     def printshar(self):
